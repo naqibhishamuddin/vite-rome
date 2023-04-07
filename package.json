@@ -1,5 +1,5 @@
 {
-  "name": "vite-template",
+  "name": "vite-rome",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -12,8 +12,8 @@
     "test:ui": "vitest --ui",
     "commit": "cz",
     "prepare": "husky install",
-    "lint": "eslint . --fix",
-    "format": "prettier . --write"
+    "lint": "rome check .",
+    "format": "rome format . --write"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -42,10 +42,11 @@
     "lint-staged": "^13.2.0",
     "msw": "^1.2.1",
     "prettier": "^2.8.7",
+    "rome": "^12.0.0",
     "typescript": "^5.0.3",
     "vite": "^4.2.0",
-    "vitest": "^0.29.8",
-    "vite-tsconfig-paths": "^4.0.8"
+    "vite-tsconfig-paths": "^4.0.8",
+    "vitest": "^0.29.8"
   },
   "module": "index.ts",
   "msw": {
@@ -62,7 +63,6 @@
     }
   },
   "lint-staged": {
-    "*.{ts,tsx}": "npm run lint",
-    "*.{ts,tsx,css,md,html,json}": "npm run format"
+    "*.{ts,tsx,json}": "npm run lint && npm run format"
   }
 }
