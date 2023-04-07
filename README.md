@@ -1,4 +1,5 @@
-# Vite React Template 🔱
+# Vite Rome Template 🔱
+
 Get started on your web development projects with this Vite template, which comes pre-configured with modern linting and formatting tools powered by Rome. You'll also find a suite of pre-configured tools for automated testing, streamlined development, and Git workflows. Get started quickly and easily with this template and focus on building great products.
 
 > **✨** Looking out for template with Eslint and Prettier configuration instead? [Vite Template](https://github.com/naqibhishamuddin/vite-template)
